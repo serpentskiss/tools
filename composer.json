@@ -7,7 +7,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "jthompson\\tools\\": "src/tools/"
+            "jthompson\\tools\\": "src/"
         }
     }
 }
