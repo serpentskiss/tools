@@ -5,7 +5,7 @@ use \Exception;
 
 class hash {
     const ERR_EMPTY         = 'Missing or empty filename';
-    const ERR_INVALID_CHARS = 'Filename contains invalid characters';
+    const ERR_INVALID_CHARS = 'Filename contains invalid characters (alphanumeric, dot, underscore and dash only)';
     
     /**
      * Return a path for a given filename to enable a more even filesystem distribution
@@ -18,9 +18,7 @@ class hash {
      * @throws Exception
      */
     static function hashPath(string $filename, int $levels = 1): string {
-        $filename = trim($filename);
-        
-        if(empty($filename)) {
+        if(empty(trim($filename))) {
             throw new Exception(self::ERR_EMPTY);
         } elseif(basename($filename) != $filename) {
             throw new Exception("Folder structure detected. Filename only required");
