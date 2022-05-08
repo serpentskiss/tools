@@ -22,6 +22,8 @@ class hash {
         
         if(empty($filename)) {
             throw new Exception(self::ERR_EMPTY);
+        } elseif(basename($filename) != $filename) {
+            throw new Exception("Folder structure detected. Filename only required");
         } elseif(preg_match("/[^a-zA-Z0-9._-]/", $filename)) {
             throw new Exception(self::ERR_INVALID_CHARS);
         } elseif($levels > 5) {
