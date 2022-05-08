@@ -1,5 +1,16 @@
 <?php
 
+/**
+ * FILESYSTEM UTILITIES
+ * 
+ * @name        connect
+ * @package     tools 
+ * @version     1.01.001
+ * @since       07-May-2022 10:41:23
+ * @author      jonthompson
+ * @abstract    
+ */
+
 namespace jthompson\tools\filesystem;
 use \Exception;
 
@@ -11,6 +22,10 @@ class hash {
      * Return a path for a given filename to enable a more even filesystem distribution
      * 
      * Example: jthompson\tools\filesystem::hashPath('test.png', 2) -> '364/be8/'
+     * 
+     * @version 1.01.001
+     * @date 07 May 2022
+     * @author Jon Thompson <jon@jonthompson.co.uk>
      * 
      * @param string $filename The filename to create a hashPath for. Accepted characters are alphanumeric, dot, underscore and dash
      * @param int $levels The number of folder levels deep to create (1-5, default is 1)
