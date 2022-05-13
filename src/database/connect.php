@@ -15,6 +15,7 @@
 
 namespace jthompson\tools\database;
 use \PDO;
+use \Exception;
 
 class connect {
     /**
@@ -38,7 +39,7 @@ class connect {
             $db = new \PDO($conn, $username, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES {$characterSet}"));
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (\PDOException $e) {
-            throw new \Exception($e->getMessage());
+            throw new Exception($e->getMessage());
         }
 
         return $db;
