@@ -1,6 +1,6 @@
 <?php
 
-namespace jthompson\tools\archives;
+namespace jthompson\tools\archive;
 
 class extendedZip extends ZipArchive {
     // Member function to add a whole file system subtree to the archive
