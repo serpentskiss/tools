@@ -4,7 +4,7 @@ namespace jthompson\tools\archive;
 
 
 /**
- * Wrapper for a mre functional ZIP command
+ * Wrapper for a more functional ZIP command
  */
 class extendedZip extends ZipArchive {
     // Member function to add a whole file system subtree to the archive
