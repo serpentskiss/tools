@@ -2,6 +2,10 @@
 
 namespace jthompson\tools\archive;
 
+
+/**
+ * Wrapper for a mre functional ZIP command
+ */
 class extendedZip extends ZipArchive {
     // Member function to add a whole file system subtree to the archive
     public function addTree(string $sourceDirectory, string $localname = ''):void {
