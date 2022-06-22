@@ -19,7 +19,7 @@ use \Exception;
 
 class connect {
     /**
-     * Connect to a database using PDO
+     * Connect to a database using PDO.
      * @version 1.01.001
      * @date 04 Mar 2020
      * @author Jon Thompson <jon@jonthompson.co.uk>
