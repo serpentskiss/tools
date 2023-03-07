@@ -2,7 +2,7 @@
     "name": "jthompson/tools",
     "description": "A Collection of useful functions for my own use",
     "require": {
-        "php": ">=7.4"
+        "php": ">=7.2"
     },
     "minimum-stability": "dev",
     "autoload": {
